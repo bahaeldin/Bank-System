@@ -34,6 +34,10 @@ public class Bank {
 		clients = new ArrayList<Client>();
 	}
 	
+	public Bank() {
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * @return the name
 	 */

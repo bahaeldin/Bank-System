@@ -1,3 +1,5 @@
+import bank.Bank;
+
 /**
  * 
  * @author Bahaeldin Bahar
@@ -12,6 +14,9 @@ public class Main {
 	 * 
 	 */
 	public static void main(String[] args) {
+		// Create a Bank 
+		
+		Bank bank = new Bank();
 		System.out.println("TEst");
 
 	}
