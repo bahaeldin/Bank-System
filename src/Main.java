@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import account.Account;
 import account.SpecialAccount;
 import bank.Bank;
@@ -17,20 +19,20 @@ public class Main {
 	 * 
 	 */
 	public static void main(String[] args) {
-
+		Scanner input = new Scanner(System.in);
 		// Create a Bank
-		Bank bank = new Bank();
-
-		Account account = new Account();
-		Account account1 = new SpecialAccount(0,"0001");
-
-		System.out.println(account1);
-		//account.deposit(100);
-		//account1.deposit(100);
-		account1.withdraw(10000);
-		Client client = new CommercialClient();
-		System.out.println(client);
-
+		Bank bank = new Bank("Cairo","14 downtown new cairo","+22074136");	
+		String choice;
+		while(true) {
+			
+			System.out.println("Enter your choice:");
+			choice = input.next();	
+			
+						
+			if(choice.equals("0"))
+				break;
+		}
+		
 	}
 
 }
