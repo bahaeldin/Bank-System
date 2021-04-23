@@ -75,4 +75,13 @@ public class Bank {
 		this.phone = phone;
 	}
 	
+	public void addNewClient(Client client) {
+		this.clients.add(client);
+		addAccount(client.getAccount());
+	}
+	
+	protected void addAccount(Account account) {
+		this.accounts.add(account);
+	}
+	
 }
