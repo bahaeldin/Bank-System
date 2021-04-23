@@ -1,6 +1,8 @@
 import account.Account;
 import account.SpecialAccount;
 import bank.Bank;
+import client.Client;
+import client.CommercialClient;
 
 /**
  * 
@@ -26,6 +28,8 @@ public class Main {
 		//account.deposit(100);
 		//account1.deposit(100);
 		account1.withdraw(10000);
+		Client client = new CommercialClient();
+		System.out.println(client);
 
 	}
 

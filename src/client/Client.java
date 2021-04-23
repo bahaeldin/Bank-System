@@ -12,18 +12,22 @@ import account.Account;
 public class Client {
 	
 	private String name;
-	private int nationaId;
+	private String nationaId;
 	private String address;
 	private String phone;
 	private Account account;
 	
-	public Client(String name, int nationaId, String address, String phone, Account account) {
+	public Client(String name, String nationaId, String address, String phone, Account account) {
 		super();
 		this.name = name;
 		this.nationaId = nationaId;
 		this.address = address;
 		this.phone = phone;
 		this.account = account;
+	}
+
+	public Client() {
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -43,14 +47,14 @@ public class Client {
 	/**
 	 * @return the nationaId
 	 */
-	public int getNationaId() {
+	public String getNationaId() {
 		return nationaId;
 	}
 
 	/**
 	 * @param nationaId the nationaId to set
 	 */
-	public void setNationaId(int nationaId) {
+	public void setNationaId(String nationaId) {
 		this.nationaId = nationaId;
 	}
 
@@ -98,8 +102,8 @@ public class Client {
 
 	@Override
 	public String toString() {
-		return "Client [name=" + name + ", nationaId=" + nationaId + ", address=" + address + ", phone=" + phone
-				+ ", account=" + account + "]";
+		return "Client Info:\nName :" + name + "\tNationaId: " + nationaId +
+				"\nAddress: " + address + "\tPhone: " + phone + "\n" + account;
 	}
 	
 	
