@@ -63,7 +63,7 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "Account Number: " + accountNumber + "\tBalance: " + balance + "$";
+		return "Account Info:\nAccount Number: " + accountNumber + "\tBalance: " + balance + "$";
 	}
 
 }

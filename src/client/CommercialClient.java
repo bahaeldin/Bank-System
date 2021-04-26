@@ -46,7 +46,7 @@ public class CommercialClient extends Client {
 
 	@Override
 	public String toString() {
-		return "Client Info:\nName: " + this.getName() + "\tNationaId: " + 
+		return "Client Info:\nName: " +
 				"\tCommercialID: "+ commercialID + this.getNationaId() +
 				"\nAddress: " + this.getAddress() + "\tPhone: " + this.getPhone() +
 				"\n" + this.getAccount();

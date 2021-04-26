@@ -102,7 +102,7 @@ public class Client {
 
 	@Override
 	public String toString() {
-		return "Client Info:\nName :" + name + "\tNationaId: " + nationaId +
+		return "Client Info:\nName: " + name + "\tNationaId: " + nationaId +
 				"\nAddress: " + address + "\tPhone: " + phone + "\n" + account;
 	}
 	
